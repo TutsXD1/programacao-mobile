@@ -1,7 +1,18 @@
+import { titulo } from './util.js';
+import titulo_padrao from './util.js';
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default function App() {
+
+  return (
+    <View style={styles.container}>
+      <Text>{titulo}</Text>
+      <Text>{titulo_padrao}</Text>
+      <Status
+    </View>
+  );
+
   // Estados para gerenciar dados
   const [task, setTask] = useState(''); // Texto digitado
   const [tasks, setTasks] = useState([]); // Lista de tarefas
